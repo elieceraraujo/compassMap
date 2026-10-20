@@ -4,6 +4,7 @@ package com.example.demo.utils;
 import com.example.demo.model.Customer;
 import com.example.demo.model.RoadMap;
 import com.example.demo.service.CustomerService;
+import com.example.demo.service.RoadMapService;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,6 +18,9 @@ public class PopulatorDB {
 
     @Autowired
     CustomerService customerService;
+    @Autowired
+    RoadMapService roadMapService;
+
 
     public List<Customer> createAndSaveCustomer (int qty){
 
@@ -49,6 +53,23 @@ public class PopulatorDB {
                 .build();
     }
 
+    public List<RoadMap> createAndSaveRoadMap (int qty){
+
+        ArrayList<RoadMap> roadMaps = new ArrayList<>();
+        Faker faker = new Faker();
+
+        for (int i = 0; i < qty; i++) {
+            //roadMaps.add(buildFakeCustomer(faker));
+            roadMaps.add(new RoadMap(
+                    UUID.randomUUID().toString(),
+                    faker.name().firstName(),
+                    faker.idNumber().hashCode(),
+                    true
+             ));
+        }
+        roadMapService.saveAll(roadMaps);
+        return roadMaps;
+    }
 
 
 }
