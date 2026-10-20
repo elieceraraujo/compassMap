@@ -49,12 +49,13 @@ public class RoadMapRestController {
         RoadMapService.deleteAllRoadMaps();
     }
 
-    @PostMapping("/add")
-    public RoadMap createRoadMap(@RequestBody RoadMap RoadMap) {
-        return RoadMapService.createRoadMap(RoadMap);
+    @PostMapping("/create")
+    public RoadMap createRoadMap(@RequestBody RoadMap roadMap) {
+        return RoadMapService.createRoadMap(roadMap);
     }
+
     @PutMapping("/update")
-    public RoadMap updateRoadMap(@RequestParam String id, @RequestParam RoadMap roadMap) {
+    public RoadMap updateRoadMap(@RequestParam String id, @RequestBody RoadMap roadMap) {
         return RoadMapService.updateRoadMap(id,roadMap);
 
     }
