@@ -188,6 +188,10 @@ public class BackOffice {
         System.out.println("Enter the steps of RoadMap");
         int steps  = Integer.parseInt(scan.nextLine());
 
-        return new RoadMap(name, description, steps, false);
+        RoadMap roadMap = new RoadMap();
+        roadMap.setName(name);
+        roadMap.setDescription(description);
+        roadMap.setSteps(steps);
+        return roadMap;
     }
 }

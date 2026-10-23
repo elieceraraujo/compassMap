@@ -23,7 +23,7 @@ public class CustomerService {
 
     public Customer createCustomer (Customer customer){
         // SET ID customer to UUID
-        customer.setId(UUID.randomUUID().toString());
+        //customer.setId(UUID.randomUUID().toString());
 
         // call repository to use SAVE operation to save data to h2 db
         Customer createdCustomer = customerRepository.save(customer);

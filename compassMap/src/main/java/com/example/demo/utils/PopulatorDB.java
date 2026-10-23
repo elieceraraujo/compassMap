@@ -52,24 +52,4 @@ public class PopulatorDB {
                 .address(faker.address().fullAddress())
                 .build();
     }
-
-    public List<RoadMap> createAndSaveRoadMap (int qty){
-
-        ArrayList<RoadMap> roadMaps = new ArrayList<>();
-        Faker faker = new Faker();
-
-        for (int i = 0; i < qty; i++) {
-            //roadMaps.add(buildFakeCustomer(faker));
-            roadMaps.add(new RoadMap(
-                    UUID.randomUUID().toString(),
-                    faker.name().firstName(),
-                    faker.idNumber().hashCode(),
-                    true
-             ));
-        }
-        roadMapService.saveAll(roadMaps);
-        return roadMaps;
-    }
-
-
 }

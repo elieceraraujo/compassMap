@@ -55,3 +55,151 @@ Wrong user name or password [28000-240]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ROADCUSTOMER" no encontrada
 Table "ROADCUSTOMER" not found; SQL statement:
 SELECT * FROM ROADCUSTOMER _MAP [42102-240]
+2026-10-23 11:28:57.705522+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, [*]value boolean, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, [*]value boolean, primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, value boolean, primary key (id)) [42001-240]
+2026-10-23 11:28:57.714562+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 11:59:27.708802+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 11:59:27.718768+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 11:59:27.729768+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 12:12:28.251786+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, name varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 12:12:28.259817+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 12:12:28.266787+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 12:18:11.285356+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, name varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 12:18:11.294349+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 12:18:11.301357+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 12:29:21.537846+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, name varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 12:29:21.546840+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 12:29:21.563809+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 12:30:43.653523+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, name varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, name varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 12:30:43.661526+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 12:30:43.668530+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 13:01:28.050908+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 13:01:28.058875+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 13:01:28.065905+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 13:50:49.882165+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 13:50:49.891194+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 13:50:49.899193+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 13:52:13.464697+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 13:52:13.472694+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), [*]order integer not null, text varchar(255), weight float(53) not null, primary key (id))"; expected "identifier"; SQL statement:
+create table question (id varchar(255) not null, dimension enum ('KNOWS_CODE','KNOWS_GIT','KNOWS_ML','WANTS_TO_LEARN','WANTS_TO_LEARN_ML'), order integer not null, text varchar(255), weight float(53) not null, primary key (id)) [42001-240]
+2026-10-23 13:52:13.480697+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "QUESTION" no encontrada
+Table "QUESTION" not found; SQL statement:
+alter table if exists question_and_answer add constraint FKahfdkvmbrs4ehyromlhw6wvc0 foreign key (question_id) references question [42102-240]
+2026-10-23 13:57:12.656951+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select q1_0.id,q1_0.dimension,q1_0.[*]order,q1_0.text,q1_0.weight from question q1_0 where q1_0.id=?"; se esperaba "identifier"
+Syntax error in SQL statement "select q1_0.id,q1_0.dimension,q1_0.[*]order,q1_0.text,q1_0.weight from question q1_0 where q1_0.id=?"; expected "identifier"; SQL statement:
+select q1_0.id,q1_0.dimension,q1_0.order,q1_0.text,q1_0.weight from question q1_0 where q1_0.id=? [42001-240]
+2026-10-23 13:59:37.599786+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:02:19.051390+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:18:09.269094+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:18:15.193088+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANSWER" no encontrada
+Table "ANSWER" not found; SQL statement:
+insert into answer (texto,value,id) values (?,?,?) [42102-240]
+2026-10-23 14:23:10.227535+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answers (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answers (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answers (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:23:17.090080+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANSWERS" no encontrada
+Table "ANSWERS" not found; SQL statement:
+insert into answers (texto,value,id) values (?,?,?) [42102-240]
+2026-10-23 14:28:17.006114+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answers (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answers (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answers (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:28:22.980885+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANSWERS" no encontrada
+Table "ANSWERS" not found; SQL statement:
+insert into answers (texto,value,id) values (?,?,?) [42102-240]
+2026-10-23 14:30:15.711856+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-10-23 14:30:19.884591+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANSWER" no encontrada
+Table "ANSWER" not found; SQL statement:
+insert into answer (texto,value,id) values (?,?,?) [42102-240]
