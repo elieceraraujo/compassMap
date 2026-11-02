@@ -29,14 +29,14 @@ public class PopulatorDB {
 
         for (int i = 0; i < qty; i++) {
             //customers.add(buildFakeCustomer(faker));
-            customers.add(new Customer(
-                    UUID.randomUUID().toString(),
-                    faker.name().firstName(),
-                    faker.name().lastName(),
-                    faker.internet().emailAddress(),
-                    faker.phoneNumber().phoneNumber(),
-                    faker.address().fullAddress()
-            ));
+            //UUID.randomUUID().toString(),
+            customers.add(Customer.builder()
+                    .firstName(faker.name().firstName())
+                    .lastName(faker.name().lastName())
+                    .email(faker.internet().emailAddress())
+                    .phone(faker.phoneNumber().phoneNumber())
+                    .address(faker.address().fullAddress())
+                    .build());
         }
         customerService.saveAll(customers);
         return customers;

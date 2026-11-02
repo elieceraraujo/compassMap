@@ -1,13 +1,13 @@
 package com.example.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -25,10 +25,14 @@ public class RoadMap {
     private int steps;
     private boolean completed;
 
+    @JsonIgnore
+    @ManyToMany(cascade = CascadeType.ALL, fetch =  FetchType.EAGER, mappedBy = "roadMaps")
+    private List<CustomerProfile> customerProfiles;
+
     //methods
     public String toString(){
         return String.format(
-                "Customer[id=%s, firstName='%s', description='%s']",
+                "RoadMap[id=%s, firstName='%s', description='%s']",
                 id, name, description);
     }
 
