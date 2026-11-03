@@ -203,3 +203,7 @@ create table answer (id varchar(255) not null, texto varchar(255), value boolean
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANSWER" no encontrada
 Table "ANSWER" not found; SQL statement:
 insert into answer (texto,value,id) values (?,?,?) [42102-240]
+2026-11-02 14:08:49.835925+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
