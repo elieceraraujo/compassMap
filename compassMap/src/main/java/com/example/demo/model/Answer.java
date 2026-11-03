@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Answer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    //@GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String texto;
     private Boolean value;

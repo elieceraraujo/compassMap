@@ -207,3 +207,55 @@ insert into answer (texto,value,id) values (?,?,?) [42102-240]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
 Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
 create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:29:05.214332+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:33:18.828327+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:39:01.124134+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:39:36.507623+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:44:34.936077+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:45:20.757163+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:46:53.414558+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 13:56:37.286412+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 14:05:55.026927+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 14:13:15.634754+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ROAD_MAP_STEPS_ITEMS_SUMARY"; se esperaba "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REFRESH"
+Syntax error in SQL statement "[*]ROAD_MAP_STEPS_ITEMS_SUMARY"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REFRESH"; SQL statement:
+ROAD_MAP_STEPS_ITEMS_SUMARY [42001-240]
+2026-11-03 14:27:57.982538+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 14:29:14.851158+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]
+2026-11-03 14:30:54.640136+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table answer (id varchar(255) not null, texto varchar(255), [*]value boolean, question_id varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table answer (id varchar(255) not null, texto varchar(255), value boolean, question_id varchar(255), primary key (id)) [42001-240]

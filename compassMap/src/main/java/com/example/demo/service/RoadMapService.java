@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -42,7 +43,7 @@ public class RoadMapService {
         return foundRoadMap.get();
     }
 
-    public void saveAll(ArrayList<RoadMap> RoadMaps) {
+    public void saveAll(List<RoadMap> RoadMaps) {
         roadMapRepository.saveAll(RoadMaps);
     }
 
